@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+:root {
+  --background-blue: #212e50;
+  --header-blue: #144766;
+  --button-blue: #2499ff;
+  --gray-font: #24262a;
+}
+
+@font-face {
+  font-family: R6S-RegItalic;
+  src: url(https://static-dm.akamaized.net/siege/prod/c69c158ebd475ce7383a484052372f19.woff2)
+      format("woff2"),
+    url(https://static-dm.akamaized.net/siege/prod/5165e561a75de43dc9f30abeaf21df0a.woff)
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+body {
+  background: var(--background-blue) url(../Bilder/Backgrund-blå.jpg) repeat-y;
+  background-size: 100%;
+}
+
+.intro {
+  position: fixed;
+  left: -100vw;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  animation: intro-animation 2s;
+}
+
+@keyframes intro-animation {
+  0% {
+    top: 100vh;
+    left: 0;
+  }
+
+  25% {
+    top: 0vh;
+    left: 0;
+  }
+
+  60% {
+    top: 0vh;
+    left: 0;
+  }
+
+  100% {
+    top: 100vh;
+    left: 0;
+  }
+}
+
+.load-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

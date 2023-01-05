@@ -1,0 +1,50 @@
+header {
+  height: 75px;
+  background: var(--header-blue);
+  display: flex;
+  align-items: center;
+}
+
+.rainbow6-logo {
+  margin: 0px 15px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Fugaz One", cursive;
+  margin: 0px 15px;
+}
+
+.link {
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  background: linear-gradient(
+      0deg,
+      #29d2fe,
+      #29d2fe 7%,
+      #29d2fe80 8%,
+      #29d2fe40 20%,
+      rgba(0, 0, 0, 0) 50%
+    )
+    0% 100%/100% 0% no-repeat;
+}
+
+.link:hover {
+  transition: 0.3s;
+  background-size: 100% 100%;
+}
