@@ -200,6 +200,12 @@ h6 {
   .credits-information {
     flex-direction: column;
   }
+
+  .credits-information p {
+    width: 200px;
+    text-align: center;
+  }
+
   .credit-category {
     display: flex;
     flex-direction: column;

@@ -32,6 +32,7 @@ h1 {
   color: white;
   font-weight: normal;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 .gubbe {
@@ -303,5 +304,8 @@ section:hover .map-name {
   .platform-container {
     flex-direction: column;
     height: 200px;
+  }
+  section {
+    width: calc(50% - 10px);
   }
 }
