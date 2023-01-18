@@ -104,6 +104,6 @@ body {
 
 .load-gif {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: calc(50% - 26px);
+  left: calc(50% - 26px);
 }
