@@ -5,7 +5,7 @@ main {
     url(../Bilder/Backgrund-linjer-höger.png) 100vw -200vw,
     url(../Bilder/Backgrund-linjer-vänster.png) 100vw -200vw;
   min-height: 1000px;
-  animation: filter infinite linear;
+  animation: 400s filter infinite linear;
   display: flex;
   flex-direction: column;
   align-items: center;
