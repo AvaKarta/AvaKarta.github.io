@@ -78,6 +78,7 @@ header {
   height: 50px;
   font-size: 2rem;
   border: none;
+  background: none;
 }
 
 #closeIcon {
