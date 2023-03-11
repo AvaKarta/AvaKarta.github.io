@@ -1,7 +1,8 @@
 
 "use strict" 
 import * as THREE from "https://unpkg.com/three@0.138.0/build/three.module.js";
-import { OrbitControls } from "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"; import { GLTFLoader } from 'https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js'; 
+import { OrbitControls } from "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js"; 
+import { GLTFLoader } from 'https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js'; 
 import { FlyControls } from 'https://unpkg.com/three@0.138.0/examples/jsm/controls/FlyControls.js'
 const GLTF = new GLTFLoader();
 
