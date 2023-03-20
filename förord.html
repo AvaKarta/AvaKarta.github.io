@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Bilder/åva.webp" />
     <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="karta.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ÅVAr</title>
     <script type="importmap">
@@ -17,6 +17,12 @@
     </script>
   </head>
   <body>
+    <ul class="menu">
+      <li><a class="menuItem" href="home.html">Hem</a></li>
+      <li><a class="menuItem" href="manual.html">Manual</a></li>
+      <li><a class="menuItem" href="förord.html">Om sidan</a></li>
+      <li><a class="menuItem" href="skapare.html">Skapare</a></li>
+    </ul>
     <header>
       <img
         id="logo"
@@ -24,16 +30,23 @@
         alt="En bild på täby logan"
       />
       <h2>Åva gymnasium</h2>
-      <a id="kontaktButton" href="kontakt.html">Kontakta ÅVar</a>
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon fa-solid fa-bars"></i>
+        <i id="closeIcon" class="fa-solid fa-xmark"></i>
+      </button>
     </header>
     <main>
-      <div id="stor" class="knapp"><a href="index.html">Karta</a></div>
-      <div class="knapp"><a href="manual.html">Manual</a></div>
-      <div class="knapp"><a href="förord.html">Om sidan</a></div>
-      <div class="knapp"><a href="skapare.html">Skapare</a></div>
+      <h1>Om sidan</h1>
+      <p>
+        Denna hemsida var skapad för att indevider på Åva gymnasium ska aldrig
+        behöva vara vilse.
+      </p>
     </main>
-    <canvas id="bg"></canvas>
     <script type="module" src="meny.js"></script>
-    <script type="module" src="home.js"></script>
+    <script
+      src="https://kit.fontawesome.com/716e28cc0e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
