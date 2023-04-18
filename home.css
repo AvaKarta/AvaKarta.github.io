@@ -13,6 +13,12 @@
   padding: 5px;
   font-size: 2rem;
   border: solid #006590;
+  transition: 0.3s;
+}
+
+.knapp:hover {
+  transition: 0.4s;
+  background: rgba(0, 101, 144, 1);
 }
 
 main {
@@ -31,17 +37,10 @@ a {
 
 #kontaktButton {
   padding: 4vh;
-  background: radial-gradient(
-      circle,
-      rgba(0, 101, 144, 1) 40%,
-      rgba(0, 101, 144, 0) 40%,
-      rgba(0, 101, 144, 0) 100%,
-      rgba(0, 0, 0, 0) 50%
-    )
-    0% 100%/100% 0% no-repeat;
+  transition: 0.3s;
 }
 
 #kontaktButton:hover {
-  transition: 0.3s;
-  background-size: 100% 100%;
+  transition: 0.4s;
+  background: rgba(0, 101, 144, 1);
 }
