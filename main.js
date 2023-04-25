@@ -4,21 +4,76 @@ import { OrbitControls } from "https://unpkg.com/three@0.138.0/examples/jsm/cont
 import { GLTFLoader } from "https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js";
 import { FlyControls } from "https://unpkg.com/three@0.138.0/examples/jsm/controls/FlyControls.js";
 
+const apiKey = "ea9430c8ead841e493b132724231602";
+
+const api =
+  "https://api.weatherapi.com/v1/current.json?key=ea9430c8ead841e493b132724231602&q=Taby&aqi=no";
+
+async function getWeather(url) {
+  let response = await fetch(url);
+  // Detta gör om resultatet från APIet till ett JSON-objekt.
+  let json = await response.json();
+  console.log(json);
+  return json.current.condition.text;
+}
+
+console.log(await getWeather(api));
+
+const weather = getWeather(api);
+
+// if (weather == "sunny") {
+//   /* light
+//    */
+// }
+
+// if (weather == "cloudy") {
+//   /* light
+//    */
+// }
+
+// if (weather == "raining") {
+//   /* light
+//     raining
+//   */
+// }
+
+// if (weather == "snowing") {
+//   /* light
+//     snow
+//   */
+// }
+
 const GLTF = new GLTFLoader();
-
 const loader = new THREE.TextureLoader();
-
 const scene = new THREE.Scene();
-scene.background = new THREE.CubeTextureLoader()
-  .setPath("Bilder/skyimage/")
-  .load([
-    "Daylight Box_Right.jpg",
-    "Daylight Box_Left.jpg",
-    "Daylight Box_Top.jpg",
-    "Daylight Box_Bottom.jpg",
-    "Daylight Box_Front.jpg",
-    "Daylight Box_Back.jpg",
-  ]);
+// scene.background = new THREE.CubeTextureLoader()
+//   .setPath("Bilder/skyimage/")
+//   .load([
+//     "Daylight Box_Right.jpg",
+//     "Daylight Box_Left.jpg",
+//     "Daylight Box_Top.jpg",
+//     "Daylight Box_Bottom.jpg",
+//     "Daylight Box_Front.jpg",
+//     "Daylight Box_Back.jpg",
+//   ]);
+
+let skySphere = new THREE.SphereGeometry(4000, 100, 100);
+
+skySphere.scale(-1, 1, 1);
+
+let skyMaterial = new THREE.MeshBasicMaterial({
+  map: loader.load("Bilder/skyimage/CasualDay4K.jpg"),
+});
+
+let Sky = new THREE.Mesh(skySphere, skyMaterial);
+
+scene.add(Sky);
+
+loader.load("Bilder/skyimage/CasualDay4K.jpg", function (texture) {
+  let material = new THREE.MeshBasicMaterial();
+  material.envMap = texture;
+  scene.background = material;
+});
 
 let height = window.innerHeight * 0.9;
 
@@ -98,13 +153,34 @@ GLTF.load(
     var object = gltf.scene;
     scene.add(gltf.scene);
     console.log(gltf.scene);
-    if (gltf.scene.children[0].name != "plan2") {
-      location.reload();
+    if (true) {
+      // location.reload();
+      let orderedList = [];
+      for (let i = 2; i < object.children.length + 2; i++) {
+        object.children.forEach((element) => {
+          if (element.name[4] == i) {
+            orderedList.push(element);
+          }
+        });
+      }
+
+      object.children.splice(
+        0,
+        6,
+        orderedList[0],
+        orderedList[1],
+        orderedList[2],
+        orderedList[3],
+        orderedList[4],
+        orderedList[5]
+      );
     }
+    console.log(gltf.scene);
     gltf.scene.children[0].position.set(0, 0, 0);
-    for (let i = 1; i < 5; i++) {
+    for (let i = 1; i < 6; i++) {
       gltf.scene.children[i].position.set(0, 0 + 8.5 * i, 0);
     }
+
     const salar = {
       2244: { orbitcenter: [-114, 0.5, -98.4], level: 2, side: "Nord" },
       2247: { orbitcenter: [-98.3, 0.5, -98.4], level: 2, side: "Nord" },
@@ -206,7 +282,7 @@ GLTF.load(
             thirdMultiplier += 0.015;
           } else {
             if (cameraKey) {
-              for (let index = level - 1; index < 5; index++) {
+              for (let index = level - 1; index < 6; index++) {
                 plantest.set(0, 150 + 8.5 * index, 0);
                 object.children[index].position.lerp(
                   plantest,
