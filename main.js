@@ -231,9 +231,9 @@ const schema = {
 /* Ett objekt med kordinater för alla klassrum*/
 
 const salar = {
-  2244: { orbitcenter: [-114, 0.5, -98.4], level: 2, side: "Nord" },
+  2244: { orbitcenter: [-114.0, 0.5, -98.4], level: 2, side: "Nord" },
   2247: { orbitcenter: [-98.3, 0.5, -98.4], level: 2, side: "Nord" },
-  2250: { orbitcenter: [-77, 0.5, -98.4], level: 2, side: "Nord" },
+  2250: { orbitcenter: [-77.0, 0.5, -98.4], level: 2, side: "Nord" },
   2248: { orbitcenter: [-55.5, 0.5, -98.4], level: 2, side: "Nord" },
   2200: { orbitcenter: [-33, 0.5, -94], level: 2, side: "Nord" },
   2251: { orbitcenter: [-23.3, 0.5, -98.4], level: 2, side: "Nord" },
@@ -246,6 +246,53 @@ const salar = {
   2260: { orbitcenter: [114.5, 0.5, -102.4], level: 2, side: "Nord" },
   2266: { orbitcenter: [122.4, 0.5, -98.4], level: 2, side: "Nord" },
   2270: { orbitcenter: [141, 0.5, -98.4], level: 2, side: "Nord" },
+  4209: { orbitcenter: [140, 18.1, -68.5], level: 4, side: "Nord" },
+  4210: { orbitcenter: [115, 18.1, -68.5], level: 4, side: "Nord" },
+  4214: { orbitcenter: [64, 18.1, -68.5], level: 4, side: "Nord" },
+  4215: { orbitcenter: [40, 18.1, -68.5], level: 4, side: "Nord" },
+  4216: { orbitcenter: [3, 18.1, -68.5], level: 4, side: "Nord" },
+  4220: { orbitcenter: [-29, 18.1, -68.5], level: 4, side: "Nord" },
+  4221: { orbitcenter: [-54, 18.1, -68.5], level: 4, side: "Nord" },
+  4228: { orbitcenter: [-105, 18.1, -68.5], level: 4, side: "Nord" },
+  4229: { orbitcenter: [-129, 18.1, -68.5], level: 4, side: "Nord" },
+  4237: { orbitcenter: [-130, 18.1, -99.0], level: 4, side: "Nord" },
+  4238: { orbitcenter: [-110, 18.1, -99.0], level: 4, side: "Nord" },
+  4241: { orbitcenter: [-90, 18.1, -99.0], level: 4, side: "Nord" },
+  4242: { orbitcenter: [-65, 18.1, -99.0], level: 4, side: "Nord" },
+  4243: { orbitcenter: [-35, 18.1, -99.0], level: 4, side: "Nord" },
+  4244: { orbitcenter: [-10, 18.1, -99.0], level: 4, side: "Nord" },
+  4246: { orbitcenter: [16, 18.1, -99.0], level: 4, side: "Nord" },
+  4247: { orbitcenter: [43, 18.1, -99.0], level: 4, side: "Nord" },
+  4248: { orbitcenter: [65, 18.1, -99.0], level: 4, side: "Nord" },
+  4249: { orbitcenter: [82, 18.1, -99.0], level: 4, side: "Nord" },
+  4250: { orbitcenter: [98, 18.1, -99.0], level: 4, side: "Nord" },
+  4251: { orbitcenter: [114.4, 18.1, -99.0], level: 4, side: "Nord" },
+  4252: { orbitcenter: [136, 18.1, -99.0], level: 4, side: "Nord" },
+  5209: { orbitcenter: [139, 26, -68.5], level: 5, side: "Nord" },
+  5210: { orbitcenter: [115, 26, -68.5], level: 5, side: "Nord" },
+  5214: { orbitcenter: [63, 26, -68.5], level: 5, side: "Nord" },
+  5215: { orbitcenter: [47, 26, -68.5], level: 5, side: "Nord" },
+  5216: { orbitcenter: [31, 26, -68.5], level: 5, side: "Nord" },
+  5217: { orbitcenter: [9, 26, -68.5], level: 5, side: "Nord" },
+  5218: { orbitcenter: [-14.5, 26, -68.5], level: 5, side: "Nord" },
+  5219: { orbitcenter: [-39, 26, -68.5], level: 5, side: "Nord" },
+  5220: { orbitcenter: [-58, 26, -68.5], level: 5, side: "Nord" },
+  5224: { orbitcenter: [-105, 26, -68.5], level: 5, side: "Nord" },
+  5225: { orbitcenter: [-130, 26, -68.5], level: 5, side: "Nord" },
+  5233: { orbitcenter: [-133, 26, -99.0], level: 5, side: "Nord" },
+  5234: { orbitcenter: [-115, 26, -99.0], level: 5, side: "Nord" },
+  5236: { orbitcenter: [-86, 26, -99.0], level: 5, side: "Nord" },
+  5237: { orbitcenter: [-60, 26, -99.0], level: 5, side: "Nord" },
+  5238: { orbitcenter: [-46, 26, -99.0], level: 5, side: "Nord" },
+  5239: { orbitcenter: [-28, 26, -99.0], level: 5, side: "Nord" },
+  5240: { orbitcenter: [-5, 26, -99.0], level: 5, side: "Nord" },
+  5241: { orbitcenter: [15, 26, -99.0], level: 5, side: "Nord" },
+  5242: { orbitcenter: [34, 26, -99.0], level: 5, side: "Nord" },
+  5243: { orbitcenter: [55, 26, -99.0], level: 5, side: "Nord" },
+  5244: { orbitcenter: [71.5, 26, -99.0], level: 5, side: "Nord" },
+  5245: { orbitcenter: [91.5, 26, -99.0], level: 5, side: "Nord" },
+  5246: { orbitcenter: [117, 26, -99.0], level: 5, side: "Nord" },
+  5247: { orbitcenter: [140, 26, -99.0], level: 5, side: "Nord" },
   2: { orbitcenter: [-5.1, 1, -98.9], level: 2, side: "Nord" },
   3: { orbitcenter: [-5.1, 9.5, -98.9], level: 3, side: "Nord" },
   4: { orbitcenter: [-5.1, 17.5, -98.9], level: 4, side: "Nord" },
@@ -285,6 +332,11 @@ function getLektion(klass) {
       if (lektion.sal == "none") {
         sal = "rast";
         nextSal = day[index + 1].sal;
+        free = false;
+        type = lektion.type;
+      } else if (lektion.type == "lastLesson") {
+        sal = lektion.sal;
+        nextSal = "none";
         free = false;
         type = lektion.type;
       } else {
@@ -420,6 +472,8 @@ sunLight4.shadow.normalBias = 0.05;
 sunLight4.position.set(-100, 100, -100);
 scene.add(sunLight4);
 
+/* Kontroler för att dra runt en viss punkt */
+
 const oControls = new OrbitControls(camera, renderer.domElement);
 oControls.minPolarAngle = 0;
 oControls.maxPolarAngle = Math.PI * 0.5;
@@ -545,7 +599,7 @@ GLTF.load(
           // oControls.autoRotate = true;
         } else {
           let newLevel = level - 1;
-          console.log(object.children[newLevel].position);
+          // console.log(object.children[newLevel].position);
           if (
             object.children[newLevel].position.y.toFixed(1) ==
               150 + 8.5 * (level - 1) &&
