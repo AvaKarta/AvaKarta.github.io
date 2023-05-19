@@ -466,7 +466,12 @@ const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector("#bg"),
 });
 
-renderer.setPixelRatio(window.devicePixelRatio);
+if (width > 1200) {
+  renderer.setPixelRatio(window.devicePixelRatio * 0.5);
+} else {
+  renderer.setPixelRatio(window.devicePixelRatio);
+}
+
 renderer.setSize(width, window.innerHeight * 0.9);
 
 const grass = loader.load("/Bilder/grass.jfif");
