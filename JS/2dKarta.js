@@ -133,24 +133,6 @@ const api =
 
 /* kollar upp vädret vid åva och skriver ut det i section*/
 
-async function getWeather(url) {
-  try {
-    let response = await fetch(url);
-    // Detta gör om resultatet från APIet till ett JSON-objekt.
-    let json = await response.json();
-    console.log(json);
-    weatherContainer.innerHTML = `<img id="weather-icon" src="${
-      json.current.condition.icon
-    }" alt="Weather icon" height="${window.innerHeight * 0.1}px">
-    <span>${json.current.condition.text}</span>
-    <span>Känns  som ${json.current.feelslike_c}°</span>`;
-  } catch (error) {
-    weatherContainer.innerHTML = `<span>Kunde inte hitta väder data.</span>`;
-  }
-}
-
-getWeather(api);
-
 /*  Skapar det nödvändgia för THREE.js*/
 
 /* Skapar en skybox*/
@@ -169,7 +151,6 @@ if (window.innerWidth > 1400) {
 
 /* Postionerar vånigarna korrekt */
 
-const buttons = document.querySelectorAll(".buttons");
 const canvas = document.querySelector("#bg");
 canvas.width = height * 0.7;
 canvas.height = height;

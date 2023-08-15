@@ -47,23 +47,6 @@ main {
   position: relative;
 }
 
-section {
-  display: none;
-  height: 100%;
-  color: white;
-  font-family: "risbyle2016-bold";
-  font-size: 2rem;
-}
-
-#weather {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 20px;
-}
-
 #canvas-container {
   position: relative;
   max-height: 90vh;
