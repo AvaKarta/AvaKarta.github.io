@@ -6,6 +6,8 @@
 
 /* Ett objekt med kordinater för alla klassrum*/
 
+console.log(window.devicePixelRatio);
+
 const salar = {
   1: { x: 0.85, y: 0.35, level: 5 },
   Aulan: { x: 0.845, y: 0.88, level: 3 },
@@ -225,13 +227,11 @@ animate();
 
 function resize() {
   let factor = 0.9;
-  let w = window.innerWidth;
+
   let h = window.innerHeight * factor;
-  if (window.innerWidth > 1000) {
-    w = 1000;
-  }
-  //   canvas.width = h * 0.7;
-  //   canvas.height = h;
+
+  //   canvas.style.width = h * 0.7;
+  //   canvas.style.height = h;
 }
 
 window.addEventListener("resize", resize);

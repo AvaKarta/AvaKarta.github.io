@@ -5,7 +5,7 @@ import { GLTFLoader } from "https://unpkg.com/three@0.138.0/examples/jsm/loaders
 import { FlyControls } from "https://unpkg.com/three@0.138.0/examples/jsm/controls/FlyControls.js";
 
 /* skapar tids variablar */
-
+console.log(window.devicePixelRatio);
 /*   Ett objekt med schema för olika klasser  */
 
 /* Ett objekt med kordinater för alla klassrum*/

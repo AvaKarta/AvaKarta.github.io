@@ -40,7 +40,7 @@ input:focus-visible {
 }
 
 main {
-  background: var(--Åva-dark-blue);
+  background: rgb(135, 171, 97);
   display: flex;
   flex-direction: row;
   justify-content: center;
