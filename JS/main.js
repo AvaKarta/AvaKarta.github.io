@@ -11,97 +11,146 @@ console.log(window.devicePixelRatio);
 /* Ett objekt med kordinater för alla klassrum*/
 
 const salar = {
-  2207: { orbitcenter: [144.0, 0.5, -68.3], level: 2, side: "Nord" },
-  2208: { orbitcenter: [124.0, 0.5, -68.3], level: 2, side: "Nord" },
-  2209: { orbitcenter: [108.0, 0.5, -68.3], level: 2, side: "Nord" },
-  2244: { orbitcenter: [-114.0, 0.5, -98.4], level: 2, side: "Nord" },
-  2247: { orbitcenter: [-98.3, 0.5, -98.4], level: 2, side: "Nord" },
-  2250: { orbitcenter: [-85.3, 0.5, -98.4], level: 2, side: "Nord" },
-  2248: { orbitcenter: [-77.0, 0.5, -98.4], level: 2, side: "Nord" },
-  2251: { orbitcenter: [-55.5, 0.5, -98.4], level: 2, side: "Nord" },
-  2252: { orbitcenter: [-33, 0.5, -94], level: 2, side: "Nord" },
-  2254: { orbitcenter: [-23.3, 0.5, -98.4], level: 2, side: "Nord" },
-  2255: { orbitcenter: [-6.2, 0.5, -98.4], level: 2, side: "Nord" },
-  2256: { orbitcenter: [17, 0.5, -98.4], level: 2, side: "Nord" },
-  2257: { orbitcenter: [36.2, 0.5, -98.4], level: 2, side: "Nord" },
-  2258: { orbitcenter: [50, 0.5, -98.4], level: 2, side: "Nord" },
-  2260: { orbitcenter: [72, 0.5, -98.4], level: 2, side: "Nord" },
-  2266: { orbitcenter: [98.5, 0.5, -98.4], level: 2, side: "Nord" },
-  2268: { orbitcenter: [114.5, 0.5, -102.4], level: 2, side: "Nord" },
-  2269: { orbitcenter: [122.4, 0.5, -98.4], level: 2, side: "Nord" },
-  2270: { orbitcenter: [141, 0.5, -98.4], level: 2, side: "Nord" },
-  3403: { orbitcenter: [-130, 9, 10.0], level: 3, side: "Nord" },
-  "3531A": { orbitcenter: [-130, 9, 55.0], level: 3, side: "Nord" },
-  3536: { orbitcenter: [-130, 9, 95.0], level: 3, side: "Nord" },
-  "3604B": { orbitcenter: [5.2, 9, 50.0], level: 3, side: "Nord" },
-  3607: { orbitcenter: [-63, 9, 70.0], level: 3, side: "Nord" },
-  3612: { orbitcenter: [5.2, 9, 90.0], level: 3, side: "Nord" },
-  4209: { orbitcenter: [140, 18.1, -68.5], level: 4, side: "Nord" },
-  4210: { orbitcenter: [115, 18.1, -68.5], level: 4, side: "Nord" },
-  4214: { orbitcenter: [64, 18.1, -68.5], level: 4, side: "Nord" },
-  4215: { orbitcenter: [40, 18.1, -68.5], level: 4, side: "Nord" },
-  4216: { orbitcenter: [3, 18.1, -68.5], level: 4, side: "Nord" },
-  4220: { orbitcenter: [-29, 18.1, -68.5], level: 4, side: "Nord" },
-  4221: { orbitcenter: [-54, 18.1, -68.5], level: 4, side: "Nord" },
-  4228: { orbitcenter: [-105, 18.1, -68.5], level: 4, side: "Nord" },
-  4229: { orbitcenter: [-129, 18.1, -68.5], level: 4, side: "Nord" },
-  4237: { orbitcenter: [-130, 18.1, -99.0], level: 4, side: "Nord" },
-  4238: { orbitcenter: [-110, 18.1, -99.0], level: 4, side: "Nord" },
-  4241: { orbitcenter: [-90, 18.1, -99.0], level: 4, side: "Nord" },
-  4242: { orbitcenter: [-65, 18.1, -99.0], level: 4, side: "Nord" },
-  4243: { orbitcenter: [-35, 18.1, -99.0], level: 4, side: "Nord" },
-  4244: { orbitcenter: [-10, 18.1, -99.0], level: 4, side: "Nord" },
-  4246: { orbitcenter: [16, 18.1, -99.0], level: 4, side: "Nord" },
-  4247: { orbitcenter: [43, 18.1, -99.0], level: 4, side: "Nord" },
-  4248: { orbitcenter: [65, 18.1, -99.0], level: 4, side: "Nord" },
-  4249: { orbitcenter: [82, 18.1, -99.0], level: 4, side: "Nord" },
-  4250: { orbitcenter: [98, 18.1, -99.0], level: 4, side: "Nord" },
-  4251: { orbitcenter: [114.4, 18.1, -99.0], level: 4, side: "Nord" },
-  4252: { orbitcenter: [136, 18.1, -99.0], level: 4, side: "Nord" },
-  5209: { orbitcenter: [139, 26, -68.5], level: 5, side: "Nord" },
-  5210: { orbitcenter: [115, 26, -68.5], level: 5, side: "Nord" },
-  5214: { orbitcenter: [63, 26, -68.5], level: 5, side: "Nord" },
-  5215: { orbitcenter: [47, 26, -68.5], level: 5, side: "Nord" },
-  5216: { orbitcenter: [31, 26, -68.5], level: 5, side: "Nord" },
-  5217: { orbitcenter: [9, 26, -68.5], level: 5, side: "Nord" },
-  5218: { orbitcenter: [-14.5, 26, -68.5], level: 5, side: "Nord" },
-  5219: { orbitcenter: [-39, 26, -68.5], level: 5, side: "Nord" },
-  5220: { orbitcenter: [-58, 26, -68.5], level: 5, side: "Nord" },
-  5224: { orbitcenter: [-105, 26, -68.5], level: 5, side: "Nord" },
-  5225: { orbitcenter: [-130, 26, -68.5], level: 5, side: "Nord" },
-  5233: { orbitcenter: [-133, 26, -99.0], level: 5, side: "Nord" },
-  5234: { orbitcenter: [-115, 26, -99.0], level: 5, side: "Nord" },
-  5236: { orbitcenter: [-86, 26, -99.0], level: 5, side: "Nord" },
-  5237: { orbitcenter: [-60, 26, -99.0], level: 5, side: "Nord" },
-  5238: { orbitcenter: [-46, 26, -99.0], level: 5, side: "Nord" },
-  5239: { orbitcenter: [-28, 26, -99.0], level: 5, side: "Nord" },
-  5240: { orbitcenter: [-5, 26, -99.0], level: 5, side: "Nord" },
-  5241: { orbitcenter: [15, 26, -99.0], level: 5, side: "Nord" },
-  5242: { orbitcenter: [34, 26, -99.0], level: 5, side: "Nord" },
-  5243: { orbitcenter: [55, 26, -99.0], level: 5, side: "Nord" },
-  5244: { orbitcenter: [71.5, 26, -99.0], level: 5, side: "Nord" },
-  5245: { orbitcenter: [91.5, 26, -99.0], level: 5, side: "Nord" },
-  5246: { orbitcenter: [117, 26, -99.0], level: 5, side: "Nord" },
-  5247: { orbitcenter: [140, 26, -99.0], level: 5, side: "Nord" },
-  6212: { orbitcenter: [123, 34, -68.5], level: 6, side: "Nord" },
-  6214: { orbitcenter: [66, 34, -68.5], level: 6, side: "Nord" },
-  6215: { orbitcenter: [50, 34, -68.5], level: 6, side: "Nord" },
-  6216: { orbitcenter: [38, 34, -68.5], level: 6, side: "Nord" },
-  6218: { orbitcenter: [28.5, 34, -64], level: 6, side: "Nord" },
-  6219: { orbitcenter: [21, 34, -64], level: 6, side: "Nord" },
-  6220: { orbitcenter: [14, 34, -64], level: 6, side: "Nord" },
-  6221: { orbitcenter: [6.5, 34, -64], level: 6, side: "Nord" },
-  6222: { orbitcenter: [0, 34, -64], level: 6, side: "Nord" },
-  6223: { orbitcenter: [-9, 34, -68.5], level: 6, side: "Nord" },
-  6224: { orbitcenter: [-18.5, 34, -64], level: 6, side: "Nord" },
-  6226: { orbitcenter: [-30, 34, -64], level: 6, side: "Nord" },
-  6227: { orbitcenter: [-32.2, 34, -73.5], level: 6, side: "Nord" },
-  6228: { orbitcenter: [-50, 34, -68.5], level: 6, side: "Nord" },
-  6233: { orbitcenter: [-106, 34, -68.5], level: 6, side: "Nord" },
-  6234: { orbitcenter: [-130, 34, -68.5], level: 6, side: "Nord" },
-  6242: { orbitcenter: [-135, 34, -99], level: 6, side: "Nord" },
-  6266: { orbitcenter: [129, 34, -99], level: 6, side: "Nord" },
-  6262: { orbitcenter: [93, 34, -99], level: 6, side: "Nord" },
+  2207: { orbitcenter: [144.0, 0.5, -68.3], level: 2 },
+  2208: { orbitcenter: [124.0, 0.5, -68.3], level: 2 },
+  2209: { orbitcenter: [108.0, 0.5, -68.3], level: 2 },
+  2244: { orbitcenter: [-114.0, 0.5, -98.4], level: 2 },
+  2247: { orbitcenter: [-98.3, 0.5, -98.4], level: 2 },
+  2250: { orbitcenter: [-85.3, 0.5, -98.4], level: 2 },
+  2248: { orbitcenter: [-77.0, 0.5, -98.4], level: 2 },
+  2251: { orbitcenter: [-55.5, 0.5, -98.4], level: 2 },
+  2252: { orbitcenter: [-33, 0.5, -94], level: 2 },
+  2254: { orbitcenter: [-23.3, 0.5, -98.4], level: 2 },
+  2255: { orbitcenter: [-6.2, 0.5, -98.4], level: 2 },
+  2256: { orbitcenter: [17, 0.5, -98.4], level: 2 },
+  2257: { orbitcenter: [36.2, 0.5, -98.4], level: 2 },
+  2258: { orbitcenter: [50, 0.5, -98.4], level: 2 },
+  2260: { orbitcenter: [72, 0.5, -98.4], level: 2 },
+  2266: { orbitcenter: [98.5, 0.5, -98.4], level: 2 },
+  2268: { orbitcenter: [114.5, 0.5, -102.4], level: 2 },
+  2269: { orbitcenter: [122.4, 0.5, -98.4], level: 2 },
+  2270: { orbitcenter: [141, 0.5, -98.4], level: 2 },
+  Aulan: { orbitcenter: [248.9, 9, -5.4], level: 3 },
+  Matsal: { orbitcenter: [252.2, 9, 10.0], level: 3 },
+  Blackbox: { orbitcenter: [100.5, 9, 30.0], level: 3 },
+  Livskunskapen: { orbitcenter: [114.5, 9, 60.6], level: 3 },
+  3287: { orbitcenter: [108.8, 9, -100.4], level: 3 },
+  3403: { orbitcenter: [-130, 9, 10.0], level: 3 },
+  "3454B": { orbitcenter: [195.7, 9, 34.3], level: 3 },
+  3464: { orbitcenter: [38.4, 9, 31.3], level: 3 },
+  "Tore Wretman": { orbitcenter: [38.4, 9, 31.3], level: 3 },
+  3465: { orbitcenter: [56.1, 9, 31.3], level: 3 },
+  "Kajsa Warg": { orbitcenter: [56.1, 9, 31.3], level: 3 },
+  3468: { orbitcenter: [68.3, 9, 11.2], level: 3 },
+  3471: { orbitcenter: [49.3, 9, 11.2], level: 3 },
+  "3528A": { orbitcenter: [-87, 9, 102.2], level: 3 },
+  "3528B": { orbitcenter: [-93, 9, 72.7], level: 3 },
+  "3528C": { orbitcenter: [-92, 9, 43.1], level: 3 },
+  "3531A": { orbitcenter: [-130, 9, 55.0], level: 3 },
+  "3531B": { orbitcenter: [-133, 9, 36.0], level: 3 },
+  "3531C": { orbitcenter: [-133, 9, 22.2], level: 3 },
+  3535: { orbitcenter: [-133, 9, 76.2], level: 3 },
+  3536: { orbitcenter: [-130, 9, 95.0], level: 3 },
+  3544: { orbitcenter: [-130.7, 9, 116.0], level: 3 },
+  3545: { orbitcenter: [-121.2, 9, 137.5], level: 3 },
+  "3603B": { orbitcenter: [-46.4, 9, 21.2], level: 3 },
+  3604: { orbitcenter: [-17.5, 9, 27.0], level: 3 },
+  "3604A": { orbitcenter: [5.1, 9, 27.0], level: 3 },
+  "3604B": { orbitcenter: [5.2, 9, 50.0], level: 3 },
+  3606: { orbitcenter: [-58, 9, 45.1], level: 3 },
+  3607: { orbitcenter: [-63, 9, 70.0], level: 3 },
+  3609: { orbitcenter: [4.9, 9, 76.3], level: 3 },
+  3610: { orbitcenter: [-9.1, 9, 52.3], level: 3 },
+  3611: { orbitcenter: [-36.4, 9, 52.9], level: 3 },
+  3612: { orbitcenter: [5.2, 9, 90.0], level: 3 },
+  3614: { orbitcenter: [-28.3, 9, 90.0], level: 3 },
+  3615: { orbitcenter: [-51, 9, 90.0], level: 3 },
+  3618: { orbitcenter: [-71.6, 9, 24.1], level: 3 },
+  3710: { orbitcenter: [161.6, 9, 36.9], level: 3 },
+  3712: { orbitcenter: [148.4, 9, 56.1], level: 3 },
+  3713: { orbitcenter: [147.2, 9, 70.7], level: 3 },
+  3714: { orbitcenter: [130.2, 9, 70.7], level: 3 },
+  3715: { orbitcenter: [127.8, 9, 55.1], level: 3 },
+  3716: { orbitcenter: [130, 9, 43.5], level: 3 },
+  3717: { orbitcenter: [128.5, 9, 30.5], level: 3 },
+  4209: { orbitcenter: [140, 18.1, -68.5], level: 4 },
+  4210: { orbitcenter: [115, 18.1, -68.5], level: 4 },
+  4214: { orbitcenter: [64, 18.1, -68.5], level: 4 },
+  4215: { orbitcenter: [40, 18.1, -68.5], level: 4 },
+  4216: { orbitcenter: [3, 18.1, -68.5], level: 4 },
+  4220: { orbitcenter: [-29, 18.1, -68.5], level: 4 },
+  4221: { orbitcenter: [-54, 18.1, -68.5], level: 4 },
+  4228: { orbitcenter: [-105, 18.1, -68.5], level: 4 },
+  4229: { orbitcenter: [-129, 18.1, -68.5], level: 4 },
+  4237: { orbitcenter: [-130, 18.1, -99.0], level: 4 },
+  4238: { orbitcenter: [-110, 18.1, -99.0], level: 4 },
+  4241: { orbitcenter: [-90, 18.1, -99.0], level: 4 },
+  4242: { orbitcenter: [-65, 18.1, -99.0], level: 4 },
+  4243: { orbitcenter: [-35, 18.1, -99.0], level: 4 },
+  4244: { orbitcenter: [-10, 18.1, -99.0], level: 4 },
+  4246: { orbitcenter: [16, 18.1, -99.0], level: 4 },
+  4247: { orbitcenter: [43, 18.1, -99.0], level: 4 },
+  4248: { orbitcenter: [65, 18.1, -99.0], level: 4 },
+  4249: { orbitcenter: [82, 18.1, -99.0], level: 4 },
+  4250: { orbitcenter: [98, 18.1, -99.0], level: 4 },
+  4251: { orbitcenter: [114.4, 18.1, -99.0], level: 4 },
+  4252: { orbitcenter: [136, 18.1, -99.0], level: 4 },
+  5209: { orbitcenter: [139, 26, -68.5], level: 5 },
+  5210: { orbitcenter: [115, 26, -68.5], level: 5 },
+  5214: { orbitcenter: [63, 26, -68.5], level: 5 },
+  5215: { orbitcenter: [47, 26, -68.5], level: 5 },
+  5216: { orbitcenter: [31, 26, -68.5], level: 5 },
+  5217: { orbitcenter: [9, 26, -68.5], level: 5 },
+  5218: { orbitcenter: [-14.5, 26, -68.5], level: 5 },
+  5219: { orbitcenter: [-39, 26, -68.5], level: 5 },
+  5220: { orbitcenter: [-58, 26, -68.5], level: 5 },
+  5224: { orbitcenter: [-105, 26, -68.5], level: 5 },
+  5225: { orbitcenter: [-130, 26, -68.5], level: 5 },
+  5233: { orbitcenter: [-133, 26, -99.0], level: 5 },
+  5234: { orbitcenter: [-115, 26, -99.0], level: 5 },
+  5236: { orbitcenter: [-86, 26, -99.0], level: 5 },
+  5237: { orbitcenter: [-60, 26, -99.0], level: 5 },
+  5238: { orbitcenter: [-46, 26, -99.0], level: 5 },
+  5239: { orbitcenter: [-28, 26, -99.0], level: 5 },
+  5240: { orbitcenter: [-5, 26, -99.0], level: 5 },
+  5241: { orbitcenter: [15, 26, -99.0], level: 5 },
+  5242: { orbitcenter: [34, 26, -99.0], level: 5 },
+  5243: { orbitcenter: [55, 26, -99.0], level: 5 },
+  5244: { orbitcenter: [71.5, 26, -99.0], level: 5 },
+  5245: { orbitcenter: [91.5, 26, -99.0], level: 5 },
+  5246: { orbitcenter: [117, 26, -99.0], level: 5 },
+  5247: { orbitcenter: [140, 26, -99.0], level: 5 },
+  6212: { orbitcenter: [123, 34, -68.5], level: 6 },
+  6214: { orbitcenter: [66, 34, -68.5], level: 6 },
+  6215: { orbitcenter: [50, 34, -68.5], level: 6 },
+  6216: { orbitcenter: [38, 34, -68.5], level: 6 },
+  6218: { orbitcenter: [28.5, 34, -64], level: 6 },
+  6219: { orbitcenter: [21, 34, -64], level: 6 },
+  6220: { orbitcenter: [14, 34, -64], level: 6 },
+  6221: { orbitcenter: [6.5, 34, -64], level: 6 },
+  6222: { orbitcenter: [0, 34, -64], level: 6 },
+  6223: { orbitcenter: [-9, 34, -68.5], level: 6 },
+  6224: { orbitcenter: [-18.5, 34, -64], level: 6 },
+  6226: { orbitcenter: [-30, 34, -64], level: 6 },
+  6227: { orbitcenter: [-32.2, 34, -73.5], level: 6 },
+  6228: { orbitcenter: [-50, 34, -68.5], level: 6 },
+  6233: { orbitcenter: [-106, 34, -68.5], level: 6 },
+  6234: { orbitcenter: [-130, 34, -68.5], level: 6 },
+  6242: { orbitcenter: [-135, 34, -99], level: 6 },
+  6243: { orbitcenter: [-121.7, 34, -99], level: 6 },
+  6244: { orbitcenter: [-121.7, 34, -99], level: 6 },
+  6245: { orbitcenter: [-121.7, 34, -99], level: 6 },
+  6246: { orbitcenter: [-100.4, 34, -99], level: 6 },
+  6247: { orbitcenter: [-66.1, 34, -99], level: 6 },
+  6249: { orbitcenter: [-45.7, 34, -99], level: 6 },
+  6250: { orbitcenter: [-38.1, 34, -91.8], level: 6 },
+  6253: { orbitcenter: [-21.2, 34, -99], level: 6 },
+  6255: { orbitcenter: [-6.7, 34, -93], level: 6 },
+  6260: { orbitcenter: [39.7, 34, -99], level: 6 },
+  "6261B": { orbitcenter: [57.7, 34, -99], level: 6 },
+  "6261A": { orbitcenter: [75.1, 34, -99], level: 6 },
+  6262: { orbitcenter: [93, 34, -99], level: 6 },
+  6266: { orbitcenter: [129, 34, -99], level: 6 },
 };
 
 const classroom = document.querySelector("#classroom");
@@ -189,20 +238,69 @@ grass.repeat.set(64, 64);
 /* Sätter ut 4 ljus källor runt Åva */
 
 const lightCordinates = [
-  new THREE.Vector3(100, 100, -100),
   new THREE.Vector3(100, 100, 100),
-  new THREE.Vector3(-100, 100, 100),
-  new THREE.Vector3(-100, 100, -100),
-  new THREE.Vector3(100, -100, -100),
+
   new THREE.Vector3(100, -100, 100),
-  new THREE.Vector3(-100, -100, 100),
+];
+
+const lightCordinates2 = [
+  new THREE.Vector3(-100, 100, -100),
+
   new THREE.Vector3(-1000, -100, -100),
+];
+
+const lightCordinates3 = [
+  new THREE.Vector3(100, 100, -100),
+
+  new THREE.Vector3(100, -100, -100),
+];
+
+const lightCordinates4 = [
+  new THREE.Vector3(-100, 100, 100),
+
+  new THREE.Vector3(-100, -100, 100),
 ];
 
 for (let index = 0; index < lightCordinates.length; index++) {
   let lightCordinate = lightCordinates[index];
   console.log(lightCordinate);
+  let sunLight = new THREE.DirectionalLight("#ffffff", 0.3);
+  sunLight.castShadow = true;
+  sunLight.shadow.camera.far = 20;
+  sunLight.shadow.mapSize.set(1024, 1024);
+  sunLight.shadow.normalBias = 0.05;
+  sunLight.position.set(lightCordinate.x, lightCordinate.y, lightCordinate.z);
+  scene.add(sunLight);
+}
+
+for (let index = 0; index < lightCordinates2.length; index++) {
+  let lightCordinate = lightCordinates2[index];
+  console.log(lightCordinate);
   let sunLight = new THREE.DirectionalLight("#ffffff", 0.4);
+  sunLight.castShadow = true;
+  sunLight.shadow.camera.far = 20;
+  sunLight.shadow.mapSize.set(1024, 1024);
+  sunLight.shadow.normalBias = 0.05;
+  sunLight.position.set(lightCordinate.x, lightCordinate.y, lightCordinate.z);
+  scene.add(sunLight);
+}
+
+for (let index = 0; index < lightCordinates3.length; index++) {
+  let lightCordinate = lightCordinates3[index];
+  console.log(lightCordinate);
+  let sunLight = new THREE.DirectionalLight("#ffffff", 0.367);
+  sunLight.castShadow = true;
+  sunLight.shadow.camera.far = 20;
+  sunLight.shadow.mapSize.set(1024, 1024);
+  sunLight.shadow.normalBias = 0.05;
+  sunLight.position.set(lightCordinate.x, lightCordinate.y, lightCordinate.z);
+  scene.add(sunLight);
+}
+
+for (let index = 0; index < lightCordinates4.length; index++) {
+  let lightCordinate = lightCordinates4[index];
+  console.log(lightCordinate);
+  let sunLight = new THREE.DirectionalLight("#ffffff", 0.33);
   sunLight.castShadow = true;
   sunLight.shadow.camera.far = 20;
   sunLight.shadow.mapSize.set(1024, 1024);
