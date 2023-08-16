@@ -60,60 +60,6 @@ section {
   margin-top: 20px;
 }
 
-#date-container {
-  position: relative;
-  width: 60%;
-  margin-top: 100px;
-}
-
-#date-information {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#classroom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  flex-direction: column;
-}
-
-#right-button {
-  right: 40px;
-}
-
-#left-button {
-  left: 40px;
-}
-
-#left-calendar-button {
-  left: -40px;
-  top: calc(50% - 30px);
-  display: block;
-}
-#right-calendar-button {
-  right: -40px;
-  top: calc(50% - 30px);
-  display: block;
-}
-
-.buttons {
-  position: absolute;
-  z-index: 500;
-  height: 60px;
-  width: 25px;
-  top: calc(50% - 30px);
-  display: none;
-  background: var(--Åva-blue);
-  border: white solid 1px;
-  border-radius: 10px;
-  color: white;
-  font-size: 1.5rem;
-}
-
 #canvas-container {
   position: relative;
   max-height: 90vh;
