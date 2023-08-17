@@ -30,17 +30,18 @@
         src="/Bilder/taby-logo-white.svg"
         alt="En bild på täby logan"
       />
+      <h2>Åva gymnasium</h2>
       <form>
         <input id="search" type="text" placeholder="Sök" list="salar" />
         <datalist id="salar"> </datalist>
       </form>
       <div id="infoBoxcontainer"><span id="infoBox"></span></div>
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon fa-solid fa-bars"></i>
+        <i id="closeIcon" class="fa-solid fa-xmark"></i>
+      </button>
     </header>
-    <button class="hamburger">
-      <!-- material icons https://material.io/resources/icons/ -->
-      <i class="menuIcon fa-solid fa-bars"></i>
-      <i id="closeIcon" class="fa-solid fa-xmark"></i>
-    </button>
     <main>
       <div id="canvas-container">
         <canvas id="bg"></canvas>

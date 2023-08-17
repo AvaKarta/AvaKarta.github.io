@@ -46,7 +46,7 @@ header {
   background: var(--Åva-blue);
   margin: 0;
   border-bottom: solid var(--Åva-dark-blue);
-
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -70,7 +70,7 @@ li:first-child {
 }
 
 .hamburger {
-  position: fixed;
+  position: absolute;
   right: 10px;
   z-index: 201;
   cursor: pointer;
@@ -122,6 +122,7 @@ h2 {
   padding: 1vh 0 1vh 4vw;
   border-left: solid white 1px;
   flex: 1;
+  max-width: 200px;
 }
 
 main {
@@ -139,6 +140,7 @@ article {
   background: white;
   border-top: solid var(--Åva-blue) 5px;
   width: 80vw;
+  font-size: 1.5vw;
 }
 
 h1 {
