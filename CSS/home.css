@@ -34,6 +34,7 @@ main {
   width: 100vw;
   height: 90vh;
   align-items: center;
+  background: var(--Åva-dark-blue);
 }
 
 a {
