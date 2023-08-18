@@ -42,17 +42,24 @@ a {
   padding: 10px;
 }
 
-#kontaktButton {
-  padding: 4vh;
-  transition: 0.3s;
-}
-
-#kontaktButton:hover {
-  transition: 0.4s;
-  background: rgba(0, 101, 144, 1);
-}
-
 #bg {
   position: fixed;
   top: 10vh;
+}
+
+@media screen and (max-width: 1200px) {
+  #kart-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .stor {
+    font-size: 2rem;
+    width: 30%;
+  }
+
+  #kart-container {
+    width: 80%;
+  }
 }

@@ -30,7 +30,7 @@ const salar = {
   2268: { orbitcenter: [114.5, 0.5, -102.4], level: 2 },
   2269: { orbitcenter: [122.4, 0.5, -98.4], level: 2 },
   2270: { orbitcenter: [141, 0.5, -98.4], level: 2 },
-  Aulan: { orbitcenter: [248.9, 9, -5.4], level: 3 },
+  Aulan: { orbitcenter: [240.9, 9, -70], level: 3 },
   Matsal: { orbitcenter: [252.2, 9, 10.0], level: 3 },
   Blackbox: { orbitcenter: [100.5, 9, 30.0], level: 3 },
   Livskunskapen: { orbitcenter: [114.5, 9, 60.6], level: 3 },
@@ -62,9 +62,9 @@ const salar = {
   3609: { orbitcenter: [4.9, 9, 76.3], level: 3 },
   3610: { orbitcenter: [-9.1, 9, 52.3], level: 3 },
   3611: { orbitcenter: [-36.4, 9, 52.9], level: 3 },
-  3612: { orbitcenter: [5.2, 9, 90.0], level: 3 },
-  3614: { orbitcenter: [-28.3, 9, 90.0], level: 3 },
-  3615: { orbitcenter: [-51, 9, 90.0], level: 3 },
+  3612: { orbitcenter: [5.2, 9, 99.0], level: 3 },
+  3614: { orbitcenter: [-28.3, 9, 99.0], level: 3 },
+  3615: { orbitcenter: [-51, 9, 99.0], level: 3 },
   3618: { orbitcenter: [-71.6, 9, 24.1], level: 3 },
   3710: { orbitcenter: [161.6, 9, 36.9], level: 3 },
   3712: { orbitcenter: [148.4, 9, 56.1], level: 3 },
@@ -222,19 +222,6 @@ if (window.innerWidth > 2000) {
 
 renderer.setSize(width, window.innerHeight * 0.9);
 
-const grass = loader.load("/Bilder/grass.jfif");
-grass.wrapS = THREE.RepeatWrapping;
-grass.wrapT = THREE.RepeatWrapping;
-grass.repeat.set(64, 64);
-
-// const fieldPlane = new THREE.PlaneGeometry(10000, 10000);
-// const fieldTexture = new THREE.MeshStandardMaterial({ map: grass });
-// const field = new THREE.Mesh(fieldPlane, fieldTexture);
-// field.rotation.x -= Math.PI / 2;
-// field.position.set(0, -4, 0);
-// scene.add(field);
-// console.log(window.innerWidth);
-
 /* Sätter ut 4 ljus källor runt Åva */
 
 const lightCordinates = [
@@ -314,6 +301,7 @@ for (let index = 0; index < lightCordinates4.length; index++) {
 const oControls = new OrbitControls(camera, renderer.domElement);
 oControls.minPolarAngle = 0;
 oControls.maxPolarAngle = Math.PI * 0.5;
+
 oControls.target.set(0, 0, -80);
 oControls.maxDistance = 600;
 oControls.minDistance = 20;
@@ -328,7 +316,7 @@ oControls.minDistance = 20;
 /* Laddar in 3d byggnad Alla kod som manipulerar 3dmodelen måsta vara innanför load() */
 
 GLTF.load(
-  "/3D-modeler/Skolstart.glb",
+  "/3D-modeler/Skolstart4.glb",
   function (gltf) {
     /* lägger till 3d-modelen till scenen/canvas */
     let object = gltf.scene;
@@ -359,7 +347,7 @@ GLTF.load(
 
     /* Postionerar vånigarna korrekt */
 
-    gltf.scene.children[0].position.set(0, 0, 0);
+    gltf.scene.children[0].position.set(0, -0.7, 0);
     for (let i = 1; i < 6; i++) {
       gltf.scene.children[i].position.set(0, 0 + 8.5 * i, 0);
     }
