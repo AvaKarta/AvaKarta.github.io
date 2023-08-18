@@ -328,7 +328,7 @@ oControls.minDistance = 20;
 /* Laddar in 3d byggnad Alla kod som manipulerar 3dmodelen måsta vara innanför load() */
 
 GLTF.load(
-  "/3D-modeler/skolasommar2023blend.glb",
+  "/3D-modeler/Skolstart.glb",
   function (gltf) {
     /* lägger till 3d-modelen till scenen/canvas */
     let object = gltf.scene;

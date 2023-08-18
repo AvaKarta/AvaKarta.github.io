@@ -68,7 +68,7 @@ oControls.target.set(-90, 0, 50);
 oControls.autoRotate = true;
 
 GLTF.load(
-  "/3D-modeler/skolasommar2023blend.glb",
+  "/3D-modeler/Skolstart.glb",
   function (gltf) {
     scene.add(gltf.scene);
   },
