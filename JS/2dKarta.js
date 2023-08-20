@@ -206,6 +206,13 @@ canvas.height = height;
 
 let imageWidth = height * 0.58869701726;
 
+function isCanvasEmpty(canvas) {
+  const blankCanvas = document.createElement("canvas");
+  blankCanvas.width = canvas.width;
+  blankCanvas.height = canvas.height;
+  return canvas.toDataURL() === blankCanvas.toDataURL();
+}
+
 const ctx = canvas.getContext("2d");
 const plan2 = document.querySelector("#plan2");
 const plan3 = document.querySelector("#plan3");
@@ -265,6 +272,10 @@ addEventListener("submit", (event) => {
 function animate() {
   requestAnimationFrame(animate);
   {
+    if (isCanvasEmpty(canvas)) {
+      console.log("tom");
+      ctx.drawImage(plan2, 0, 0, imageWidth, height);
+    }
   }
 }
 
